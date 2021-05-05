@@ -42,7 +42,7 @@
 #endif
 
 /* defined in traceback.c */
-extern Py_ssize_t _Py_write_noraise(int fd, const char *buf, size_t count);
+extern Py_ssize_t _Py_write_noraise(int fd, const void *buf, size_t count);
 extern void dump_decimal(int fd, int value);
 extern void reverse_string(char *text, const size_t len);
 

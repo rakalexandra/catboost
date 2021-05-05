@@ -24,7 +24,7 @@
  * When interrupted by a signal (write() fails with EINTR), retry the syscall
  * without calling the Python signal handler. */
 Py_ssize_t
-_Py_write_noraise(int fd, const char *buf, size_t count)
+_Py_write_noraise(int fd, const void *buf, size_t count)
 {
     Py_ssize_t res;
 

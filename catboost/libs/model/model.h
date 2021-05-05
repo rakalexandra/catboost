@@ -642,7 +642,7 @@ public:
     TIntrusivePtr<NCB::TTextProcessingCollection> TextProcessingCollection;
     TIntrusivePtr<NCB::TEmbeddingProcessingCollection> EmbeddingProcessingCollection;
 private:
-    EFormulaEvaluatorType FormulaEvaluatorType = EFormulaEvaluatorType::CPU;
+    EFormulaEvaluatorType FormulaEvaluatorType = EFormulaEvaluatorType::GPU;
     TAdaptiveLock CurrentEvaluatorLock;
     mutable NCB::NModelEvaluation::TModelEvaluatorPtr Evaluator;
 public:

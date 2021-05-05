@@ -599,6 +599,14 @@ namespace NCB::NModelEvaluation {
                 }
             }
 
+            void Quantize(
+                    TConstArrayRef<TConstArrayRef<float>> features,
+                    IQuantizedData* quantizedData
+            ) const override {
+                (void)features;
+                (void)quantizedData;
+            }
+
         private:
             template <typename TCatFeatureContainer = TConstArrayRef<int>>
             void ValidateInputFeatures(
